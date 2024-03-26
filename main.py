@@ -22,7 +22,7 @@ origins = [
     "https://todo-frontend-mty7vlou5-anshuls-projects-abee54f1.vercel.app/",
 ]
 
- CORS configuration, needed for frontend development
+# CORS configuration, needed for frontend development
 #app.add_middleware(
 #    CORSMiddleware,
 #    allow_origins=["*"],
