@@ -23,7 +23,7 @@ app.include_router(todos.router)
 #]
 
 # CORS configuration, needed for frontend development
- app.add_middleware(
+app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
