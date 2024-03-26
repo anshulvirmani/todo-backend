@@ -17,19 +17,19 @@ app = FastAPI()
 app.include_router(todos.router)
 
 
-origins = [
-    "http://localhost:3000",
-    "https://todo-frontend-mty7vlou5-anshuls-projects-abee54f1.vercel.app/",
-]
+#origins = [
+#    "http://localhost:3000",
+#    "https://todo-frontend-mty7vlou5-anshuls-projects-abee54f1.vercel.app/",
+#]
 
 # CORS configuration, needed for frontend development
-# app.add_middleware(
-#    CORSMiddleware,
-#    allow_origins=["*"],
-#    allow_credentials=True,
-#    allow_methods=["*"],
-#    allow_headers=["*"],
-#)
+ app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # global http exception handler, to handle errors
