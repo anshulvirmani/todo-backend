@@ -17,10 +17,10 @@ app = FastAPI()
 app.include_router(todos.router)
 
 
-#origins = [
-#    "http://localhost:3000",
-#    "https://todo-frontend-khaki.vercel.app/",
-#]
+origins = [
+    "http://localhost:3000",
+    "https://todo-frontend-mty7vlou5-anshuls-projects-abee54f1.vercel.app/",
+]
 
 # CORS configuration, needed for frontend development
 app.add_middleware(
